@@ -1,0 +1,71 @@
+.live-news-image-container {
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden; /* Ensures no overflow from image */
+}
+
+.live-news-image {
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Adjust as needed for larger screens */
+    height: 130vh; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    margin-bottom: 20px;
+}
+
+.category-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A90E2; /* Light blue color for the text */
+    text-transform: uppercase; /* Make the category name uppercase */
+    letter-spacing: 2px; /* Add some spacing between letters */
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(74,144,226,1) 0%, rgba(0,212,255,1) 100%); /* Gradient background */
+    color: white; /* White text on gradient background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.card {
+    margin: 1rem; /* Margin around cards to improve spacing */
+    height: auto; /* Allow height to be flexible */
+    width: 350px; /* Default width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visual effect */
+    border-radius: 8px; /* Optional: adds rounded corners to the cards */
+    overflow: hidden; /* Prevents image or content overflow */
+}
+
+.card-img-top {
+    width: 100%; /* Make sure image fits the width of the card */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.btn {
+    width: 100%; /* Full width button */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 300px; /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 100%; /* Full width on very small screens */
+        max-width: 500px; /* Optional: max width for very small screens */
+    }
+}
